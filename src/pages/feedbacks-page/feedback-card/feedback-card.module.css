@@ -1,0 +1,128 @@
+.feedback_card {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    background: var(--character-light-primary-inverse);
+}
+
+.feedback_card .comment_content_author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 174px;
+}
+
+.feedback_card .comment_content_author .name_author {
+    margin: 0;
+    text-align: center;
+    width: min-content;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--character-light-title-85);
+}
+
+.feedback_card .comment_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feedback_card .comment_content .comment_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.feedback_card .comment_content .comment_header .rating {
+    line-height: 16px;
+}
+
+.feedback_card .comment_content .comment_header .rating :global .ant-rate-star {
+    margin-right: 4px;
+}
+
+.feedback_card .comment_content .comment_header .rating :global .ant-rate-star-full .anticon {
+    color: var(--character-light-warning);
+}
+
+.feedback_card
+    .comment_content
+    .comment_header
+    .rating
+    :global
+    .ant-rate-star-full
+    .anticon
+    svg
+    path {
+    fill: var(--character-light-warning);
+}
+
+.feedback_card .comment_content .comment_header .rating :global .ant-rate-star-zero .anticon {
+    color: var(--character-light-warning);
+}
+
+.feedback_card
+    .comment_content
+    .comment_header
+    .rating
+    :global
+    .ant-rate-star-zero
+    .anticon
+    svg
+    > :first-child {
+    fill: transparent;
+}
+
+.feedback_card
+    .comment_content
+    .comment_header
+    .rating
+    :global
+    .ant-rate-star-zero
+    .anticon
+    svg
+    > :last-child {
+    fill: var(--character-light-warning);
+}
+
+.feedback_card .comment_content .comment_header .date {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--character-light-disable-25);
+}
+
+.feedback_card .comment_content .comment_message {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: var(--character-light-secondary-45);
+    word-break: break-all;
+}
+
+@media (max-width: 768px) {
+    .feedback_card {
+        flex-direction: column;
+    }
+
+    .feedback_card .comment_content_author {
+        flex-direction: row;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .feedback_card .comment_content_author .name_author {
+        text-align: start;
+    }
+
+    .feedback_card .comment_content {
+        gap: 16px;
+    }
+}

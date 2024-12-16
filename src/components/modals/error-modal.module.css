@@ -1,0 +1,22 @@
+.modal_wrap {
+    padding: 36px 16px;
+}
+
+.modal {
+    max-width: 540px;
+}
+.modal .result {
+    width: 100%;
+    padding: 0;
+}
+.modal .result :global .ant-result-title {
+    font-weight: 500;
+    line-height: 130%;
+}
+.modal .result :global .ant-result-subtitle {
+    line-height: 130%;
+}
+.modal .result .button {
+    font-size: 14px;
+    line-height: 130%;
+}

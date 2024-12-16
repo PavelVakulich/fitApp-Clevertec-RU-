@@ -1,0 +1,86 @@
+.wrap_modal {
+    padding: 16px;
+}
+
+.modal {
+    max-width: 540px;
+}
+
+.modal :global .ant-modal-title {
+    line-height: 130%;
+}
+
+.modal :global .ant-modal-footer {
+    padding: 10px 24px;
+}
+
+.modal .button {
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.modal .form .message_item {
+    margin-bottom: 0;
+}
+
+.modal .form .rating {
+    margin-bottom: 16px;
+    line-height: 0.9;
+    color: var(--character-light-warning);
+}
+
+.modal .form .rating :global .ant-rate-star {
+    margin-right: 4px;
+}
+
+.modal .form .rating :global .ant-rate-star-full .anticon {
+    color: var(--character-light-warning);
+}
+
+.modal .form .rating :global .ant-rate-star-full .anticon svg path {
+    fill: var(--character-light-warning);
+}
+
+.modal .form .rating :global .ant-rate-star-zero .anticon {
+    color: var(--character-light-warning);
+}
+
+.modal .form .rating :global .ant-rate-star-zero .anticon svg > :first-child {
+    fill: transparent;
+}
+
+.modal .form .rating :global .ant-rate-star-zero .anticon svg > :last-child {
+    fill: var(--character-light-warning);
+}
+
+.modal .form .textarea {
+    line-height: 130%;
+    box-sizing: border-box;
+    resize: vertical !important;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.modal .form .textarea::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .modal :global .ant-modal-header {
+        padding: 16px 10px 16px 16px;
+    }
+
+    .modal :global .ant-modal-body {
+        padding: 24px 16px;
+    }
+
+    .modal :global .ant-modal-footer {
+        padding: 10px 16px;
+    }
+
+    .modal .button {
+        width: 100%;
+        display: block;
+    }
+}

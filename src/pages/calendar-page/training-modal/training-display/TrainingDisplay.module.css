@@ -1,0 +1,69 @@
+.modal_header {
+    padding: 16px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_header .header_content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.modal_header .header_content .modal_title {
+    margin: 0;
+    line-height: 130%;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.modal_header .header_content .modal_subtitle {
+    line-height: 130%;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--character-light-secondary-45);
+    margin: 0;
+}
+
+.modal_header .button_close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.modal_main .trainings {
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.modal_main .trainings .training_item {
+    padding: 2px 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    text-align: left;
+}
+
+.modal_main .trainings .training_item:hover {
+    background-color: var(--neutral-gray-3);
+}
+
+.modal_main .trainings .training_item .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_main .empty {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.modal_footer {
+    padding: 12px;
+    box-shadow: inset 0 1px 0 0 var(--character-light-dividers);
+}

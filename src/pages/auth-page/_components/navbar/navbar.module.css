@@ -1,0 +1,67 @@
+.navbar_container :global .ant-menu-overflow {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar_container :global .ant-menu-overflow .ant-menu-overflow-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar_container :global .ant-menu-overflow .ant-menu-item {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: var(--character-light-title-85);
+}
+
+.navbar_container :global .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item {
+    padding: 0;
+}
+
+.navbar_container :global .ant-menu-horizontal > .ant-menu-item::after {
+    left: 0;
+    right: 0;
+}
+
+.navbar_container :global .ant-menu-horizontal > .ant-menu-item-selected a {
+    color: var(--primary-light-6);
+}
+
+.navbar_container :global .ant-menu-horizontal > .ant-menu-item-selected a:hover {
+    color: var(--primary-light-6);
+}
+
+.navbar_container :global .ant-menu-horizontal > .ant-menu-item a:hover {
+    color: var(--primary-light-6);
+}
+
+.navbar_container
+    :global
+    .ant-menu-horizontal:not(.ant-menu-dark)
+    > .ant-menu-item-selected::after {
+    border-color: var(--primary-light-6);
+}
+
+.navbar_container :global .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after {
+    border-color: var(--primary-light-6);
+}
+
+.navbar_container
+    :global
+    .ant-menu-horizontal:not(.ant-menu-dark)
+    > .ant-menu-item-active::after:hover {
+    background-color: var(--primary-light-6);
+}
+
+.navbar_container :global .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after {
+    border-color: var(--primary-light-6);
+}
+
+@media (max-width: 640px) {
+    .navbar_container :global .ant-menu-overflow .ant-menu-item {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,49 @@
+.exercise {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.exercise .columns {
+    display: flex;
+    justify-content: space-between;
+}
+.exercise .columns .approach {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.exercise .columns .weight,
+.exercise .columns .count {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.exercise .columns .count_input {
+    position: relative;
+}
+.exercise .columns .count_input::before {
+    content: 'x';
+    position: absolute;
+    width: 8px;
+    height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--character-light-disable-25);
+    top: 50%;
+    left: -7px;
+    transform: translate(-50%, -50%);
+}
+.exercise .columns .column {
+    display: flex;
+    gap: 14px;
+}
+.exercise .label {
+    width: 100%;
+    padding: 4px 8px;
+    background-color: var(--neutral-gray-4);
+    line-height: 130%;
+    font-size: 12px;
+}

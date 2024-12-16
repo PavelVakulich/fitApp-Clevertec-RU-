@@ -1,0 +1,240 @@
+.main_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 48px;
+    padding: var(--padding-header);
+    background-color: var(--primary-light-1);
+}
+
+.calendar_container .calendar {
+    background-color: transparent;
+}
+
+.calendar_container :global .ant-picker-calendar-mini {
+    background-color: var(--neutral-gray-1);
+}
+
+.calendar_container :global .ant-picker-calendar-mini .ant-picker-cell.selected {
+    z-index: 8;
+}
+
+.calendar_container :global .ant-picker-calendar-mini .ant-picker-cell-inner {
+    pointer-events: auto;
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-mini
+    .ant-picker-cell-selected
+    .ant-picker-cell-inner {
+    background: var(--neutral-gray-1);
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-mini
+    .ant-picker-cell-selected
+    .ant-picker-cell-inner
+    .ant-picker-calendar-date-value {
+    color: var(--character-light-primary-85);
+}
+
+.calendar_container :global .ant-picker-calendar-mini .ant-picker-calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-mini
+    .ant-picker-calendar-header
+    .ant-select
+    .ant-select-selector {
+    align-items: center;
+    height: 20px;
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-mini
+    .ant-picker-calendar-header
+    .ant-select
+    .ant-select-selector
+    span {
+    line-height: 130%;
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-mini
+    .ant-picker-calendar-header
+    .ant-picker-calendar-mode-switch {
+    display: flex;
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-mini
+    .ant-picker-calendar-header
+    .ant-picker-calendar-mode-switch
+    label {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    line-height: 130%;
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-mini
+    .ant-picker-calendar-header
+    .ant-picker-calendar-mode-switch {
+    margin: 0;
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-mini
+    .ant-picker-calendar-header
+    .ant-picker-calendar-month-select {
+    margin: 0;
+}
+
+.calendar_container :global .ant-picker-calendar-mini .ant-picker-body {
+    padding: 8px 5px;
+}
+
+.calendar_container :global .ant-picker-calendar-mini .ant-picker-body .ant-picker-content {
+    height: 210px;
+}
+
+.calendar_container :global .ant-picker-calendar-mini .ant-picker-body .ant-picker-content thead {
+    height: 30px;
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-mini
+    .ant-picker-body
+    .ant-picker-content
+    thead
+    th {
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-mini
+    .ant-picker-body
+    .ant-picker-content
+    .ant-picker-cell {
+    padding: 3px 3px;
+    vertical-align: middle;
+    height: 30px;
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-mini
+    .ant-picker-body
+    .ant-picker-content
+    .ant-picker-cell
+    .ant-picker-cell-inner {
+    width: 100%;
+    max-width: 48px;
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-mini
+    .ant-picker-body
+    .ant-picker-content
+    .ant-picker-cell
+    .ant-picker-cell-inner:has(.mobile_cell) {
+    color: var(--character-light-title-85);
+    background-color: var(--primary-light-1);
+}
+
+.calendar_container :global .ant-picker-calendar-full .ant-picker-panel {
+    background-color: transparent;
+}
+
+.calendar_container :global .ant-picker-calendar-full .ant-picker-cell-inner {
+    background: var(--neutral-gray-1);
+    pointer-events: auto;
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-full
+    .ant-picker-cell-selected
+    .ant-picker-cell-inner {
+    background: var(--neutral-gray-1);
+}
+
+.calendar_container
+    :global
+    .ant-picker-calendar-full
+    .ant-picker-cell-selected
+    .ant-picker-cell-inner
+    .ant-picker-calendar-date-value {
+    color: var(--character-light-primary-85);
+}
+
+.calendar_container :global .ant-picker-calendar-full .ant-picker-cell.selected {
+    z-index: 8;
+}
+
+@media (max-width: 960px) {
+    .main_container {
+        margin: 0 0 42px;
+    }
+}
+@media (max-width: 680px) {
+    .main_container {
+        align-self: flex-start;
+    }
+
+    .calendar_container {
+        margin-top: 19px;
+        padding-bottom: 7px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar_container
+        :global
+        .ant-picker-calendar-mini
+        .ant-picker-calendar-header
+        .ant-picker-calendar-year-select {
+        width: auto;
+    }
+    .calendar_container
+        :global
+        .ant-picker-calendar-mini
+        .ant-picker-calendar-header
+        .ant-picker-calendar-month-select {
+        width: auto;
+    }
+    .calendar_container
+        :global
+        .ant-picker-calendar-mini
+        .ant-picker-calendar-header
+        .ant-picker-calendar-mode-switch {
+        width: auto;
+    }
+    .calendar_container
+        :global
+        .ant-picker-calendar-mini
+        .ant-picker-calendar-header
+        .ant-picker-calendar-mode-switch
+        label {
+        width: auto;
+    }
+}
