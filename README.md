@@ -19,4 +19,7 @@
 - **TypeScript
 - **Redux
 
+  ![1440_default](https://github.com/user-attachments/assets/45688321-0891-4752-983a-84fd5889a7eb)
+
+
 origin link: https://github.com/ClevertecFrontendLab/PavelVakulich/tree/sprint-5
